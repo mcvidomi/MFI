@@ -17,8 +17,10 @@ run `demo.py`. It will take about 1 min.
 
 USPS (United States Postal Service - handwritten digits) dataset will be downloaded in data/usps.
 
-## Results
+# Results
 
+The first row shows the raw digits.
+The second row shows the shape of the digits over the `MFI` results, respectively. On the top of the image the prediction score of the classifier is plotted - <0: decide for '3' and >0: decide for '8'.
 ![alt tag](/mfi_ibr.png)
 
 
