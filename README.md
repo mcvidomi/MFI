@@ -1,3 +1,11 @@
+This repository contains the code to the paper entitled **Feature Importance Measure for Non-linear Learning Algorithms**
+
+* the paper https://arxiv.org/abs/1611.07567 was presented at [NIPS 2016](https://nips.cc) in the workshow for [Interpretable ML for Complex Systems](https://sites.google.com/site/nips2016interpretml/) by Marina Marie-Claire Vidovic
+
+
+
+
+
 # MFI - Measure of Feature Importance. 
 
 `MFI` is an algorithm that was developed to explain arbitrary classifiers in two ways:
