@@ -17,12 +17,18 @@ run `demo.py`. It will take about 1 min.
 
 USPS (United States Postal Service - handwritten digits) dataset will be downloaded in data/usps.
 
+An SVM with an RBF kernel is trained on the data. Afterwards `MFI` is computed for the instance-based explanation (exemplarly 4 digits were chosen) and for the model-based explanation.
+
 # Results
 
+## Instance-based results
 The first row shows the raw digits.
 The second row shows the shape of the digits over the `MFI` results, respectively. On the top of the image the prediction score of the classifier is plotted - <0: decide for '3' and >0: decide for '8'.
 ![alt tag](/mfi_ibr.png)
 
+## Model-based results
 
+The result heat map shows the important pixel for the classifier to decide for a '3' instead of an '8'. 
+![alt tag](/mfi_mbr.png)
 
 
