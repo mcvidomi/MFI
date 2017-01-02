@@ -1,6 +1,6 @@
 # MFI - Measure of Feature Importance. 
 
-`MFI` is an algorithm that can explain the classifier in two ways:
+`MFI` is an algorithm that was developed to explain arbitrary classifiers in two ways:
 
 1. model-based explanation: what has the classifier learned in total?
 
@@ -19,7 +19,8 @@ USPS (United States Postal Service - handwritten digits) dataset will be downloa
 
 ## Results
 
-![GitHub Logo](/mfi_ibr.pdf)
+[embed]/mfi_ibr.pdf[/embed]
+
 
 
 
