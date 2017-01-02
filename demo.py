@@ -1,4 +1,3 @@
-import mfi
 import tools
 import numpy as np
 import pickle
