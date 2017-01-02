@@ -19,7 +19,7 @@ USPS (United States Postal Service - handwritten digits) dataset will be downloa
 
 ## Results
 
-[embed]/mfi_ibr.pdf[/embed]
+![alt tag](/mfi_ibr.png)
 
 
 
