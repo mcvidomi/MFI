@@ -65,7 +65,6 @@ else:
 view.PLOTnum3(ibr,"results/mfi_ibr.png",x[C],clf.decision_function(x[C]))
 
 
-
 # GENERATE RANDOM SAMPLES
 print("COMPUTE MODEL-BASED MFI")
 
@@ -77,14 +76,3 @@ metric = 'rbf'
 mbr = tools.mfi_mb(clf.decision_function(samples), samples, metric, degree=2)
 #view.PLOTnum(mbr,"results/mfi_mbr.pdf",np.reshape(np.mean(x,axis=0),(16,16)))
 view.PLOTnum3([mbr],"results/mfi_mbr.png",[np.mean(x[y==numbers[0]],axis=0)])
-
-pdb.set_trace()
-view.PLOT(mbr,"results/mfi_mbr.png")
-
-py.subplot(2, len(mfis), len(mfis) + 1 + i)
-fig = py.imshow(rgb)
-fig.axes.get_xaxis().set_visible(False)
-fig.axes.get_yaxis().set_visible(False)
-py.title(str(np.round(prediction[i],2)))
-
-py.savefig(savepath, bbox_inches=0, orientation='landscape', pad_inches=0.1)
