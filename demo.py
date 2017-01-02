@@ -18,13 +18,12 @@ if not os.path.exists("results"):
 
 
 # READ DATA
+print("LOAD/READ DATA")
 xtrain,ytrain,xtest,ytest = tools.read_data()
 numbers = [4,9]
 x,y = tools.choose_numbers(xtrain,ytrain,numbers)
 xt,yt = tools.choose_numbers(xtest,ytest,numbers)
-
-
-
+print("LOAD/READ DATA --- DONE!")
 
 # TRAIN SVM
 clf = SVC()
@@ -37,12 +36,12 @@ samples = np.random.uniform(-1.,1.,(samplesize,len(x[0])))#np.random.uniform(0.,
 
 # INSTANCE-BASED MFI
 
+print("COMPUTE INSTANCE-BASED MFI")
 C = np.array([0,5,77,113])
 N=len(C)
 ibr = []
 
-'''
-compute = False
+compute = True
 
 if compute:
     for i in range(N):
@@ -57,20 +56,19 @@ else:
 
 
 # PIXEL FLIPPING
-flibos = []
-for i in range(len(ibr)):
-    flibos.append(tools.flibo_relation_rep(clf,x[C[i]],ibr[i],N=100,rep=5))
-
-print flibos
+#flibos = []
+#for i in range(len(ibr)):
+#    flibos.append(tools.flibo_relation_rep(clf,x[C[i]],ibr[i],N=100,rep=5))
+#print flibos
 
 
 view.PLOTnum3(ibr,"results/mfi_ibr.png",x[C],clf.decision_function(x[C]))
 
-'''
-
 
 
 # GENERATE RANDOM SAMPLES
+print("COMPUTE MODEL-BASED MFI")
+
 samplesize = 1000
 samples = np.random.uniform(-1.,1.,(samplesize,len(x[0])))#np.random.uniform(0.,1.,(samplesize,len(x[0])))
 metric = 'rbf'
