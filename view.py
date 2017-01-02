@@ -65,7 +65,6 @@ def PLOTnum3(mfis, savepath, digits,prediction=None):
     cmp._init()
 
     for i,mfi in enumerate(mfis):
-        print i
         py.subplot(2, len(mfis), i + 1)
         fig = py.imshow(vec2im(digits[i]),cmap = cmp)
         fig.axes.get_xaxis().set_visible(False)
@@ -73,7 +72,6 @@ def PLOTnum3(mfis, savepath, digits,prediction=None):
 
 
     for i,mfi in enumerate(mfis):
-        print i
         rgb = hm_to_rgb(mfi, X=digits[i])
         py.subplot(2, len(mfis), len(mfis) + 1 + i)
         fig = py.imshow(rgb,interpolation='spline16')
